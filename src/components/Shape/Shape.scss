@@ -1,0 +1,13 @@
+.shape {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(82,22,21,1);
+    background-image: linear-gradient(45deg, rgba(82,22,21,1), rgba(82,22,21,1));
+    border-radius: 100%;
+    filter: blur(10px);
+    z-index: 2;
+}

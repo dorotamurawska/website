@@ -1,0 +1,52 @@
+.home {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    margin: 0;
+    color: rgba(255,255,255,.25); 
+    text-align: center;
+    overflow: hidden;
+
+    &__txt-wrap {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 40%;
+        min-width: 400px;
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        border: 2px double rgba(255, 255, 255, 0.5);
+        border-width: 4px 0;
+        padding: 30px 0;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        z-index: 2;
+        .home__small-txt {
+            width: 100%;   
+        }
+        .home__big-txt {
+            width: 100%;
+            font-weight: 700;
+            font-size: 70px;
+            letter-spacing: 0;
+            padding: .25em 0 .325em;
+            display: block;
+            text-shadow: 0 0 80px rgba(255,255,255,.30);  
+            background: url('../../img/animated_text_fill.png') repeat-y;
+            background-clip: text;  
+            -webkit-text-fill-color: transparent;
+            animation: animatedText 100s linear infinite;
+            transform: translate3d(0,0,0);
+            backface-visibility: hidden;
+      
+        }
+    }    
+    @keyframes animatedText {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+}
+

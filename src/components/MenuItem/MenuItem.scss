@@ -1,0 +1,30 @@
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid #fff;
+&__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+    font-family: "OpticianSans", Georgia, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+&:nth-child(1) {
+    border-left: 1px solid #fff;
+}
+&:nth-last-child(1) {
+    border-right:none;
+}
+} 

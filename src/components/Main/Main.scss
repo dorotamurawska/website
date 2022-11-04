@@ -1,0 +1,18 @@
+.main {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    width: 90%;
+    background-color: #111;
+    border-radius: 10px;
+    border: solid 1px #fff;
+    // h1 {
+    //      -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0,0,0,.2)); 
+    //      color: #fff;
+    //      position: absolute;
+    //      top: 25%;
+    //      left: 10%;
+    // }
+}

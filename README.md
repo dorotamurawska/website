@@ -1,5 +1,7 @@
 # website in progress...
 
+## go live: https://qor84t-3000.preview.csb.app/
+
 ## Available Scripts
 
 In the project directory, you can run:

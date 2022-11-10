@@ -37,7 +37,7 @@ const Drops = () => {
 
     const dropsArray = [];
 
-    class Particle {
+    class Drop {
         constructor(x, y, radius) {
             this.posOrNeg = Math.random() + 0.1 > 0.5 ? '+' : '-';
             this.randNumX = `${this.posOrNeg}${Math.random() * velocityIncrementMax + 0.5}`;
@@ -85,13 +85,13 @@ const Drops = () => {
 
         for (let i = 0; i < amtParticles; i++) {
             let randRadius = Math.floor(Math.random() * randRadiusMax);
-            dropsArray.push(new Particle(mousePos.x, mousePos.y, randRadius));
+            dropsArray.push(new Drop(mousePos.x, mousePos.y, randRadius));
         }
     };
 
     const animate = () => {
         contextRef.current.clearRect(0, 0, window.innerWidth, window.innerHeight);
-        dropsArray.forEach(particle => particle.draw());
+        dropsArray.forEach(drop => drop.draw());
         requestAnimationFrame(animate);
     };
 

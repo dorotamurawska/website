@@ -1,0 +1,33 @@
+.projects {
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        margin: 0;
+        padding: 30px 50px;
+        flex-wrap: wrap;
+    }
+    &__img {
+        width: 156px;
+        height: 227px;
+        margin: 15px;
+        background-image: url('../../img/multi_step.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+    &__shape {
+        width: 100%;
+        height: 100%;
+        background: transparent url('../../svg/shape.svg') no-repeat 50% 50%/110px auto;
+    }
+    &__circle {
+        background: transparent url('../../svg/circle.svg') no-repeat 50% 50%/110px auto;
+    }
+
+}

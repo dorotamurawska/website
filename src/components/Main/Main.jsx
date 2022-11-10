@@ -1,20 +1,26 @@
+import { useState } from 'react';
+
 // components:
 import Home from '../Home/Home';
 import Menu from '../Menu/Menu';
+import Projects from '../Projects/Projects';
 import Social from '../Social/Social';
-// import Shape from '../Shape/Shape';
 
 // style:
 import './Main.scss';
 
 const Main = () => {
+    const [numberOfContent, setNumberOfContent] = useState(1);
+
+    const renderContent = () => {
+        if (numberOfContent === 0) return <Home />
+        else if (numberOfContent === 1) return <Projects />
+    }
     return (
         <div className="main">
             <Menu />
             <Social />
-            {/* <Shape /> */}
-            <Home />
-            {/* <h1>Dorota - junior front-end dev</h1> */}
+            {renderContent()}
         </div>
     );
 }

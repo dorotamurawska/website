@@ -10,7 +10,7 @@ import Social from '../Social/Social';
 import './Main.scss';
 
 const Main = () => {
-    const [numberOfContent, setNumberOfContent] = useState(1);
+    const [numberOfContent, setNumberOfContent] = useState(0);
 
     const renderContent = () => {
         if (numberOfContent === 0) return <Home />

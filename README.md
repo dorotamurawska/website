@@ -1,7 +1,5 @@
 # website in progress...
 
-## go live: https://p9jfre-3000.preview.csb.app/
-
 ## Available Scripts
 
 In the project directory, you can run:
